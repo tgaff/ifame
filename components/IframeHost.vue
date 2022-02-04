@@ -6,7 +6,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage',
+  name: 'IframeHost',
   props: {
     url: String,
     height: {
@@ -20,11 +20,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-
-<style>
-.nuxt-logo {
-  height: 180px;
-}
-</style>
-

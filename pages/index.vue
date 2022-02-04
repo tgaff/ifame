@@ -36,13 +36,13 @@ export default Vue.extend({
   data: function() {
     const urlDefault = "https://example.com/"
     const urlFromQuery = this.$route.query['url']
-    const widthFromQuery = this.$route.query['width']
-    const heightFromQuery = this.$route.query['height']
+    const widthFromQuery = Number(this.$route.query['width'])
+    const heightFromQuery = Number(this.$route.query['height'])
 
     return {
       url: urlFromQuery ? urlFromQuery : urlDefault,
-      width: Number(Number(widthFromQuery) > 100 ? widthFromQuery : defaultWidth),
-      height: Number(Number(heightFromQuery) > 100 ? heightFromQuery : defaultHeight),
+      width: Number(widthFromQuery > 100 ? widthFromQuery : defaultWidth),
+      height: Number(heightFromQuery > 100 ? heightFromQuery : defaultHeight),
     }
 
   },
@@ -64,7 +64,6 @@ export default Vue.extend({
       }
     }
   }
-
 })
 </script>
 
