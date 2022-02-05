@@ -1,5 +1,7 @@
 <template>
+<div>
   <iframe :width="width" :height="height" :src="url" />
+</div>
 </template>
 
 <script lang="ts">
@@ -16,7 +18,7 @@ export default Vue.extend({
     width: {
       type: Number,
       default: null
-    }
-  }
+    },
+  },
 })
 </script>
