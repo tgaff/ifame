@@ -20,7 +20,7 @@
           <label class="block uppercase tracking-wide text-gray-200 text-xs font-bold mb-2" for="grid-height">
             Height
           </label>
-          <input v-model.number="height" v-on:input="updateQuery" class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-height" type="text">
+          <input v-model.number="height" v-on:input="updateQuery" class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-height" type="number">
         </div>
       </div>
 
